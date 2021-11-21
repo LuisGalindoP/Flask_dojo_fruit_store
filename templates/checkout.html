@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+<body>
+    <h2 class="navbar bg-warning text text-dark" style="height: 70px;">Dojo Fruit Store</h2>
+    <div class="jumbotron text-center">
+        <h1 class="jumbotron-heading"> Thank you for your order</h1>
+        <p class="lead text-muted">Your order contain {{session['total_fruits']}} items</p>
+        <p>
+    </div>
+    <div class="py-1 container">
+        <h3 class="mb-3">Your order:</h3>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Fruit Name</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>{{session['strawberries']}}</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>{{session['bananas']}}</td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>{{session['apples']}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="mb-3">Your information</h3>
+        <div class="row">         
+                <p class="col-md-6">First Name: {{session['first_name']}}</p>          
+                <p class="col-md-6">Last Name: {{session['last_name']}}</p>         
+        </div>
+        <div>
+            <p>Student ID: {{session['student_id']}}</p>
+        </div>
+
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h2 class="navbar bg-warning text text-dark" style="height: 70px;">Dojo Fruit Store</h2>
+    <div class="jumbotron text-center">
+        <h1 class="jumbotron-heading"> Check the fruits!!</h1>
+        <p class="lead text-muted">Here are some images of the availabe fruits today</p>
+        <p>
+    </div>
+    <div>
+        <table class="table  container">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Fruit</th>
+                    <th>Name</th>
+                    <th>Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../static/img/apple.png" alt=""></td>
+                    <td>Apple</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><img src="../static/img/blackberry.png" alt=""></td>
+                    <td>Blackberry</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><img src="../static/img/raspberry.png" alt=""></td>
+                    <td>Raspberry</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><img src="../static/img/strawberry.png" alt=""></td>
+                    <td>Strawberry</td>
+                    <td>19</td>
+                </tr>
+            </tbody>
+        </table>        
+    </div>
+</body>
+</html>
